@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<Title>SURYA PLAYWAY SCHOOL</Title>
+</head>
+<link rel="stylesheet" href="w3.css">
+<style>
+.slide{display:none;}
+.w3-badge{height:13px;width:13px;padding:0;cursor:pointer;}
+#tit{
+font-family:Bradley hand itc;
+color:yellow;
+font-size:40px;
+}
+h1{
+background-color:red;
+font-family:Gabriola;
+}
+#last{
+font-size:25px;
+color:white;
+background-color:red;
+
+}
+.rang1{
+color:black;
+}
+.rang{
+color:yellow;
+font-size:25px;
+}
+body{
+background-color:#D6D3CB;
+}
+.sizee{
+font-size:28px;
+background-color:black;
+color:yellow;
+}
+</style>
+<body>
+<h1>
+<img style="border:5;"src="sun.png" height="150px" width="400px" align="left">
+<img style="border:5;"src="sun.png" height="150px" width="400px" align="right">
+<center><span id="tit">'SURYA'</span><br><font size="30px">PlAy WaY sChOoL</font></center>
+<font class="sizee"><marquee direction="left">lEt'S lEaRn AnD pLaY!</marquee></font></h1><br><br>
+<div class="w3-content w3-display-container" style="max-width:800px">
+<img src="pic1.png" class="slide" style="width:100%">
+<img src="pic2.png" class="slide" style="width:100%">
+<img src="pic3.png" class="slide" style="width:100%">
+<img src="pic4.png" class="slide" style="width:100%">
+<img src="pic5.png" class="slide" style="width:100%">
+<img src="pic6.png" class="slide" style="width:100%">
+<img src="pic7.png" class="slide" style="width:100%">
+<img src="pic8.png" class="slide" style="width:100%">
+<a href="SPWS(pics).html"><span class="w3-text-amber w3-xxlarge" align="center"><i>MoRe PiCs</i></span></a>
+<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(1)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(2)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(3)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(4)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(5)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(6)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(7)"></span>
+<span class="w3-badge demo w3-border w3-grey w3-hover-black" onclick="currentDiv(8)"></span>
+</div>
+</div>
+
+<br><br>
+<img style="border:5;"src="mmy.png" height="700px" width="450px" align="left">
+<font size="20" style="font-family:Bradley Hand ITC">
+My name is Mrs. Suman Rana and I welcome and thank you for having a look at my school's site.<br>
+I had served as a teacher in 6 schools, BACHPAN, NURSERY etc, at differnet places in my past.
+I had earned my NTT degree in 2005. Thus I have a great experience of teaching and understanding <i>KIDS</i>.
+I had been teaching in home since last year. So send your children and make them uplight the WORLD!
+<b><i><u>'SURYA'</b></i></u>  
+</font>
+<br><br>
+<div id="last">
+<p>
+<span class="rang">&nbsp;&nbsp;Address:</span><br>
+<span class="rang1">&nbsp;&nbsp;#42, Yog Vihar, Baltana<br>
+&nbsp;&nbsp;SAS Nagar<br>
+&nbsp;&nbsp;MOHALI</span><br>
+<span class="rang">&nbsp;&nbsp;Contact:</span><br>&nbsp;&nbsp;<span class="rang1"><u>9878459241</u><br>&nbsp;&nbsp;<u>7087353122</u></span>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="rang">Email:</span>&nbsp;&nbsp;<span class="rang1"><u><i>sumrana71@gmail.com</i></u></span>
+</p></div>
+<script>
+var slideIndex=1;
+showDivs(slideIndex);
+function plusDivs(n){
+showDivs(slideIndex+=n);
+}
+function currentDiv(n){
+showDivs(slideIndex=n);
+}
+function showDivs(n){
+var i;
+var x=document.getElementsByClassName("slide");
+var dots=document.getElementsByClassName("demo");
+if(n>x.length){slideIndex=1;}
+if(n<1){slideIndex=x.length;}
+for(i=0;i<x.length;i++){x[i].style.display="none";}
+for(i=0;i<dots.length;i++){
+dots[i].className=dots[i].className.replace("w3-white","");
+}
+x[slideIndex-1].style.display="block";
+dots[slideIndex-1].className+="w3-white";
+}
+</script>
+</body>
+</html>

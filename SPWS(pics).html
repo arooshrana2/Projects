@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>SURYA PLAYWAY SCHOOL</title>
+<link rel="stylesheet" href="w3.css">
+<style>
+#tit{
+font-family:Bradley hand itc;
+color:yellow;
+font-size:40px;
+}
+h1{
+background-color:red;
+font-family:Gabriola;
+}
+.sizee{
+font-size:28px;
+background-color:black;
+color:yellow;
+}
+</style>
+<body>
+<h1>
+<img style="border:5;"src="sun.png" height="150px" width="400px" align="left">
+<img style="border:5;"src="sun.png" height="150px" width="400px" align="right">
+<center><span id="tit">'SURYA'</span><br><font size="30px">ChIlDrEn Of ThE sChOoL</font></center>
+<font class="sizee"><marquee direction="left">LeT's LeArN aNd PlAy!</marquee></font></h1>
+<br><br>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="pic9.png" style="width:100%">
+  <img class="mySlides" src="pic10.png" style="width:100%">
+  <img class="mySlides" src="pic11.png" style="width:100%">
+  <img class="mySlides" src="pic12.jpg" style="width:100%">
+  <img class="mySlides" src="pic13.jpg" style="width:100%">
+  <img class="mySlides" src="pic14.jpg" style="width:100%">
+  <img class="mySlides" src="pic15.jpg" style="width:100%">
+  <img class="mySlides" src="pic16.jpg" style="width:100%">
+  <img class="mySlides" src="pic17.jpg" style="width:100%">
+  <img class="mySlides" src="pic18.jpg" style="width:100%">
+  <img class="mySlides" src="pic19.jpg" style="width:100%">
+  <img class="mySlides" src="pic20.jpg" style="width:100%">
+  <img class="mySlides" src="pic21.jpg" style="width:100%">
+  <img class="mySlides" src="pic22.jpg" style="width:100%">
+  <img class="mySlides" src="pic23.jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
